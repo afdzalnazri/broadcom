@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>8-bit Checksum</title>
+<!-- checksum8.html created by Kerry Imming on Tue Jan 6 2004 -->
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080">
+<script language="JavaScript">
+<!--
+
+// Calcuate 8-bit checksum for string N
+function calc_cksum8(form, N) {
+
+  // convert input value to upper case
+  strN = new String(N);
+  strN = strN.toUpperCase();
+
+  strHex = new String("0123456789ABCDEF");
+  result = 0;
+  fctr = 16;
+
+  for (i=0; i<strN.length; i++) {
+    if (strN.charAt(i) == " ") continue;
+
+    v = strHex.indexOf(strN.charAt(i));
+    if (v < 0) {
+       result = -1;
+       break; 
+    } 
+    result += v * fctr;
+
+    if (fctr == 16) fctr = 1;
+    else            fctr = 16;
+  }
+
+  if (result < 0) {
+     strResult = new String("Non-hex character");
+  }
+  else if (fctr == 1) {
+     strResult = new String("Odd number of characters");
+  }
+  else {
+     // Calculate 2's complement
+     result = (~(result & 0xff) + 1) & 0xFF;
+     // Convert result to string
+     //strResult = new String(result.toString());
+     strResult = strHex.charAt(Math.floor(result/16)) + strHex.charAt(result%16);
+  }
+  form.CKS8.value = strResult;
+}
+
+function clear_facts(form) {
+  // Clear the checksum result field
+  form.CKS8.value  = " ";
+}
+
+// -->
+</script>
+
+<h2>8-bit Checksum</h2>
+<p>
+Calculates the 8-bit checksum for a sequence of hexadecimal bytes.  Bytes are provided as two-character strings.  Characters can be in upper or lower case.  Spaces are ignored but there must be an even number of characters.
+<p>
+The 8-bit checksum is the 2's complement of the sum off all bytes.  The checksum value, when added to the sum of all bytes produces a result of zero.  
+
+<h3>Calculator:</h3>
+
+<p>Enter value for Hex and press
+the &quot;calculate&quot; button to calculate the 8-bit checksum.</p>
+
+<form name="icalc">
+  <p>
+  Hex: <input type="text" size="128" name="N" onchange="clear_facts(this.form)">
+  <br>
+       <input type="button" name="calc" value="Calculate"
+         onclick="calc_cksum8(this.form, this.form.N.value)">
+  <br> <br>
+  Checksum: <input type="text" size="24" name="CKS8">
+  </p>
+</form>
+<hr>
+<p><a href="./index.html">Return to Kerry's home page</a></p>
+</body>
+</html>

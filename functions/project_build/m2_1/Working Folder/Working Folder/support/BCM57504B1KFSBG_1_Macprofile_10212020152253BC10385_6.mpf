@@ -1,0 +1,56 @@
+# #################################################################
+# ##### This is a sample profile used in Stratus OCP for FB #######
+# #####               Currently commented out.              #######
+# #################################################################
+
+# This line is a comment. Make sure it starts with '#'.
+# This is a MAC assignment profile file. It defines how 
+
+# Must start with version. Only 1.0 is supported for now.
+version = 1.0
+
+# Total number of entries below.
+entries = 8
+
+# ordinal  : the ordinal value used in NVRAM.
+# mac_type : either "primary" or "BMC", more can be defined
+#            as needed later.
+# increment: MAC address value from the base one.
+
+ordinal = 0
+mac_type = primary
+increment = 0
+
+ordinal = 0
+mac_type = BMC
+increment = 1
+
+ordinal = 1
+mac_type = primary
+increment = 2
+
+ordinal = 1
+mac_type = BMC
+increment = 3
+
+ordinal = 2
+mac_type = primary
+increment = 4
+
+ordinal = 2
+mac_type = BMC
+increment = 5
+
+ordinal = 3
+mac_type = primary
+increment = 6
+
+ordinal = 3
+mac_type = BMC
+increment = 7
+
+# MAC address value to be advanced for the next chip.
+stride = 8
+
+# ##### End of sample profile in Stratus OCP for FB #######
+

@@ -1,0 +1,16 @@
+iscsi_boot=214.0.152.0
+bfw=214.0.194.0
+pcie=2144df1c
+pcfg00=0da3c223
+pcfg01=9797ed8b
+scfg=b178d623
+cfwchksum=56466d09
+cfwpchksum=0ccff232
+afwchksum=7e162bc5
+ccmchksum=2144df1c
+mbachksum=2144df1c
+bfwchksum=3d04cede
+tscfchksum=2144df1c
+ibootchksum=2144df1c
+ibcfg00chksum=5961fe90
+ibcfg01chksum=5961fe90

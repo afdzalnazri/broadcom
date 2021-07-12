@@ -1,0 +1,6 @@
+If selection is not made/found in Build  Config - Configuration Or .bin is found, then you insert the defaults.
+If selection is  made/found in Build  Config - Configuration And .bin is found, then you insert based on Build COnfig - Configuration.
+If selection is  made/found in Build  Config - Configuration And .bin is not found, then you do not insert based on Build COnfig - Configuration.
+If selection is  made/found in Build  Config - Configuration And .bin is not found, then you do not insert based on Build COnfig - Configuration.
+
+// i2cAddress = 'A0', (default A0) take A0.bin should get from the build config - insert by the user

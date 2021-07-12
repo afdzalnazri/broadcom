@@ -1,0 +1,44 @@
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/CFGCHK.TXT.IN CRC FILE: 4054206783 CRCDB:4054206783
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/FCTPRG.sh CRC FILE: 2144888691 CRCDB:2144888691
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/FCTTEST.sh CRC FILE: 3996446709 CRCDB:3996446709
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/GET_CRID.TCL CRC FILE: 1427679303 CRCDB:1427679303
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/LOG.sh CRC FILE: 3454641735 CRCDB:3454641735
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NEW CFGCHK.TXT.IN CRC FILE: 1129680680 CRCDB:
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NVMFILL.TCL CRC FILE: 187306666 CRCDB:187306666
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NVMFILL.sh CRC FILE: 2296295552 CRCDB:2296295552
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NVRAM.TCL CRC FILE: 1169987934 CRCDB:1169987934
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NVRAMCFG.TCL CRC FILE: 4100756725 CRCDB:4100756725
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/NVRAMLOG.TCL CRC FILE: 623621588 CRCDB:623621588
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/ProjectCode_MMDDYY.upd CRC FILE: 26687832 CRCDB:26687832
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/QA.sh CRC FILE: 2333317857 CRCDB:2333317857
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/READMAC.TCL CRC FILE: 231680568 CRCDB:231680568
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/READMAC.sh CRC FILE: 3679665605 CRCDB:3679665605
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/STRESPRG.sh CRC FILE: 53243574 CRCDB:53243574
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/STRESTST.sh CRC FILE: 3883007329 CRCDB:3883007329
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/Setup.sh CRC FILE: 3824571206 CRCDB:3824571206
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/TaskState_xxx.ini CRC FILE: 1970277329 CRCDB:1970277329
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/dada.txt CRC FILE: 3003861147 CRCDB:3003861147
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/filelist.txt CRC FILE: 943629849 CRCDB:943629849
+
+../../modules/input/files_master_file_versioning/extracted/Master File Versioning/mfgload.sh CRC FILE: 2363251330 CRCDB:2363251330
+

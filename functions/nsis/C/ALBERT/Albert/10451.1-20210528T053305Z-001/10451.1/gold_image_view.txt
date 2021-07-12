@@ -1,0 +1,11 @@
+Package File: source/BC.img
+Package File Length    : 4474084 bytes
+Package Description    : Broadcom NetXtreme E-Series Single Port 100Gb OCP 3.0  Ethernet Adapter
+Package Version        : 216.2.299.9
+Package Checksum       : 0x969D165C
+Created On             : 2021-05-13 13:31:33
+Created With           : bnxtmt v216.2.97.0 (Linux)
+Supported Device IDs   : 1751 
+Subsystem Vendor ID    : 14E4
+Subsystem ID           : 5101
+Manifest Items         : 8

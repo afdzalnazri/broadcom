@@ -1,0 +1,91 @@
+BCM957412M4122C_006
+BROADCOM
+BCM57412B0KFSBG_1_FWPackage_08052020025607BC10237_7.img M4122C_128_fru_A2.bin
+NVRAM=BCM57412B0KFSBG_1_FWPackage_08052020025607BC10237_7.img
+FRU=M4122C_128_fru_A2.bin
+Oem_name=BRCM
+Num_Of_Ieee_Address=18
+RevDevLabel=1
+
+;first mac only
+MAC_multiple=18
+MinIsoFWVer=19.04.07.01
+;update software version to most recent release
+MinDST1Ver=2.01.05.001
+MinDSTWinCtrlVer=8.0.0.1
+
+;------------------------------- MODEL PARAMS-----------------------------------
+;from verifyLabel
+hw_type = M125P
+bCdiag = true
+LabelLength=16
+
+;from loadi2CSettings, there is a good chance these arent needed
+i2cDevice = Atmel AT24C04
+method = EERPOM1AddWord
+i2cAddress = A2
+pageSize = 4
+deviceMemorySize = 128
+;EnableSingleByteFRU=1;this is a new LW field 1.0.1.055+, values can be 0 or 1, If the value is ommited
+;it is assumed 0, and we use DulaByte mode to R/W to FRU
+EnableSingleByteFRU=1
+
+;from soteDiag.ini, look for your specific model
+MAC_COUNT = 0x01
+MAC_INCREMENT = 0x01
+PART_NUMBER = M4122
+
+;From soteDiagFwCheck.ini or the .ver log file, if the field isn't present 
+;delete the line
+;[M125P]
+TOTAL_FW_CHECK=20
+Engineering_Diagnostics=216.0.210.0
+BFW=214.0.194.0
+iSCSI_Boot=214.0.152.0
+APE_Firmware=214.4.42.1  
+CCM=216.0.52.1
+CFWP=214.4.91.1
+CFW=214.4.91.1
+MBA=214.0.241.0
+; these come from the checksum section of log, these are 8 bytes long
+; use generic checksum (2144df1c) for PCFG00 & PCFG01 when mac_prof is used
+PCIE=2144df1c
+PCFG00=2144df1c
+SCFG=a401f49d
+CFWCHKSUM=56466d09
+CFWPCHKSUM=0ccff232
+AFWCHKSUM=7e162bc5
+CCMCHKSUM=2144df1c
+MBACHKSUM=2144df1c
+BFWCHKSUM=3d04cede
+TSCFCHKSUM=2144df1c
+IBOOTCHKSUM=2144df1c
+IBCFG00CHKSUM=5961fe90
+
+
+;------------------------ MODEL PARAMS (FRU SPECIFIC) --------------------------
+TEMPLATE_SIZE = 128
+TEMPLATE_CHECKSUM = 0
+Checksum_Verification = 0byte
+
+;fru_template=xxxx.bin=device address in hex
+Fru_Template=M4122C_128_fru_A2.bin=A2
+Begin
+;other options include 0, 1, obrien
+BRCM_DATE=1     
+
+;BRCM_BlockWriteSinglebyteMode=i2c_dev_Addr,dev_register,block_length,value
+;this command will set a block of the specified i2c device with a single value
+;BRCM_BlockWriteSinglebyteMode=A0,00,100,00
+
+;new BRCM_OEM_SN=start fru,location in label, length
+BRCM_OEM_SN=19,00,10
+
+;new: Brcm_FBChecksum=start,stop,result loc in hex
+Brcm_FBChecksum=0x0,0x7,0x7
+Brcm_FBChecksum=0x8,0x3F,0x3F
+Brcm_FBChecksum=0x40,0x77,0x77
+
+END
+
+EOF

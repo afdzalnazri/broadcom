@@ -1,0 +1,57 @@
+
+Log open time: Fri May 21 11:31:22 2021
+
+bnxtmt version  : 216.2.97.0
+Hardware Information 
+  VERSION       :	0.0.0
+  REG HDR VER   :	5.6.69
+  HWRM VER      :	1.10.2.16
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FamVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  8.0 0xC1F2 26  000AF7314308 216.2.299.9 auto
+                                      0xC340
+    Type    Ordinal NVM Offset   Image Len      Version     Host Attr
+== ======== ======= ========== ============== =========== =============
+ 1 UPDATE   00      0x00103000 000000(200000)  0. 0. 0. 0
+ 2 SRT      00      0x00303000 0519d0(064000) 216. 2.43. 8
+ 3 SBI      00      0x00000000 033cd0(080000) 218.0.109.0
+ 4 CRT      00      0x00367000 109670(10a000) 216. 2.43. 8
+ 5 MBA      00      0x00471000 035320(04b000) 216. 2.28. 0
+                                             216. 2.81. 0 EFI
+ 6 FACT_CFG 00      0x004bc000 009000(009000)  0. 0. 0. 0
+ 7 VPD      00      0x004c5000 000194(001000)  0. 0. 0. 0
+ 8 PKG_LOG  00      0x004c6000 000118(001000) 216.2.299.9
+ 9 SBI      01      0x00080000 033cd0(080000) 218.0.109.0
+10 SRT      01      0x004c7000 0519d0(064000) 216. 2.43. 8
+11 SYS_CFG  00      0x0052b000 009000(009000)  0. 0. 0. 0
+12 CHDMP_D  00      0x00534000 080000(080000)  0. 0. 0. 0
+13 CHDMP_D  01      0x005b4000 080000(080000)  0. 0. 0. 0
+     Type   Ordinal NVM Offset    Image Len   Content  Computed  Result
+== ======== ======= ========== ============== ======== ======== ============
+ 1 UPDATE  00      0x00103000 000000(200000) 00000000 00000000 OK
+ 2 SRT     00      0x00303000 0519d0(064000) 5cd72354 5cd72354 OK
+ 3 SBI     00      0x00000000 033cd0(080000) 2144df1c 2144df1c OK
+ 4 CRT     00      0x00367000 109670(10a000) bfa0ce4a bfa0ce4a OK
+ 5 MBA     00      0x00471000 035320(04b000) 2144df1c 2144df1c OK
+ 6 FACT_CFG00      0x004bc000 009000(009000) 00000000 ed4edd76 OK
+ 7 VPD     00      0x004c5000 000194(001000) 72eb687b 72eb687b OK
+ 8 PKG_LOG 00      0x004c6000 000118(001000) 97e22bf1 97e22bf1 OK
+ 9 SBI     01      0x00080000 033cd0(080000) 2144df1c 2144df1c OK
+10 SRT     01      0x004c7000 0519d0(064000) 5cd72354 5cd72354 OK
+11 SYS_CFG 00      0x0052b000 009000(009000) 00000000 2462581f OK
+12 CHDMP_D 00      0x00534000 080000(080000) 00000000 b37a3387 OK
+13 CHDMP_D 01      0x005b4000 080000(080000) 00000000 dc0c24a9 OK
+PRODUCT_NAME = Broadcom NetXtreme E-Series Single Port 100Gb OCP 3.0  Ethernet Adapter
+PN = BCM957504-N1100FXB
+MN = 14E4
+V0 = 216.2.299.9
+V1 = 216.2.81.0
+V3 = 216.2.299.8
+V6 = 216.2.28.0
+V8 = 216.2.299.6
+VB = REV005DEV001DEV002DEV003DEV004DEV005
+SN = N1100FX1920A0032CQ
+
+
+Duration: 	0:00:03
+Log close time: Fri May 21 11:31:25 2021
+

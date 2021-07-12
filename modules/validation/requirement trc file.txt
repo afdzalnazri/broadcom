@@ -1,0 +1,10 @@
+TRC file - get the file name: - chect the date format must be the same (MLFName)
+if not teh same , exit and come out
+
+capture board revision , PCIE , speed & FamVer - after the log time line.
+read after copyreadmac.txt
+cotinue if not the same
+
+Versioning:
+both file should be the same
+next compare the next line but ignore 

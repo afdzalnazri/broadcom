@@ -1,0 +1,19 @@
+#4d dusagse:  <DEV> :  PCIE=<PCIE_SETTING>  <FW_NAME1>=<version_string>  <FW_NAME2>=<version_string>  pciecrc=<CRC32_value> BOARD=<board_name>
+#       ss          DEV :   dev1 | dev2  | dev3 | ....
+#vdsvdsvdsvds
+#   sss   refre           PCIE_SETTING: GEN1x1 | GEN1x2 | GEN1x4 | GEN1x8
+#                 PCIE_SETTING: GEN2x1 | GEN2x2 | GEN2x4 | GEN2x8
+#       sssfdsfdsfds gdfgdf          PCIE_SETTING: GEN3x1 | GEN3x2 | GEN3x4 | GEN3x8
+#
+#                 FW_NAMEx :  cfw  |  cfw2 | mba
+#                 version_str :  __.__.__.__   
+#			     cfw=0.1.12.0      => WRONG
+#                            cfw= 0. 1.12. 0   => CORRECT 
+#                       each sub-version need 2 bytes.Total 11 Bytes
+#
+#                 board_name : cumulus | ...ddd
+##
+dev1 : PCIE=GEN3x4
+dev2 : PCIE=GEN3x4
+dev3 : PCIE=GEN3x4
+dev4 : PCIE=GEN3x4

@@ -1,0 +1,11 @@
+.row-form{
+	margin:10px 5px;
+}
+
+.normalfont{
+	font-weight:normal
+}
+
+.empty-border{
+	border: 1px solid red;
+}

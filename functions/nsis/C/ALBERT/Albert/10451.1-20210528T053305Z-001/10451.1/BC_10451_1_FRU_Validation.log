@@ -1,0 +1,89 @@
+
+Log open time: Fri May 21 11:37:27 2021
+
+Command argument:
+./bnxtmt -none -fru validate fru.bin fru.spec -sn4 sn4.txt -fmac 10451_1.mac -log BC_10451_1_FRU_Validation.log 
+
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FamVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  8.0 0xC1F2 26  000AF7314308 216.2.299.9 auto
+                                      0xC340
+TrLv<1>, tclbrcm_parse_params.c (3069): (nil) parse_and_process_args: Get MAC from file for 1 port (mac_per_port=1)
+User has entered the serial number: N1100FX1920A0032CQ(18).
+Command: validate fru.bin fru.spec N1100FX1920A0032CQ 00:0a:f7:31:43:00
+Found Broadcom Generic spec
+
+Processing Broadcom Generic Spec
+Date calculated : cbbd7d
+Update date at offset=0xb, value=cbbd7d, bytes=3, string length=6
+Update serial at offset=0x34, value=N1100FX1920A0032CQ, bytes=18, string length=18
+Update serial at offset=0xb0, value=N1100FX1920A0032CQ, bytes=18, string length=18
+Update udid_vsid at offset=0xf9, value=f7314300, bytes=4, string length=8
+
+Updating Checksum fields
+Update [Board checksum] at offset=0x67, value=5, bytes=1, string length=1
+Update [Product checksum] at offset=0xc7, value=c3, bytes=1, string length=2
+Update [OEM Record checksum] at offset=0xcb, value=fa, bytes=1, string length=2
+Update [OEM Header checksum] at offset=0xcc, value=94, bytes=1, string length=2
+Done with the FRU spec file.....
+
+Starting fru_eeprom_write ...
+Transmit long hwrm_mfg_fru_eeprom_write (0x20a): 
+Structure hwrm_mfg_fru_eeprom_write_input (32-byte) :
+req_type: 0x020a (MFG_FRU_EEPROM_WRITE) 
+cmpl_ring: 0xffff (65535) 
+seq_id: 0x0001 (1) 
+target_id: 0xffff (65535) 
+resp_addr: 0x00000004 0x49bb3040
+data_addr: 0x00000004 0x95754040
+i2c_slave_addr: 0x00a0 (160) 
+data_len: 0x1000 (4096) 
+offset: 0x0000 (0) 
+unused[0..2]: 0x00 (0) 0x00 (0) 
+CPU chimp
+Structure hwrm_mfg_fru_eeprom_write_output (16-byte) :
+error_code: 0x0000 (SUCCESS) 
+req_type: 0x020a (MFG_FRU_EEPROM_WRITE) 
+seq_id: 0x0001 (1) 
+resp_len: 0x0010 (16) 
+total_data_len: 0x0000 (0) 
+unused_0: 0x0000 (0) 
+unused_1[0..3]: 0x00 (0) 0x00 (0) 0x00 (0) 
+valid: 0x01 (1) 
+result is 0
+Starting fru_eeprom_read...
+Transmit long hwrm_mfg_fru_eeprom_read (0x20b): 
+Structure hwrm_mfg_fru_eeprom_read_input (32-byte) :
+req_type: 0x020b (MFG_FRU_EEPROM_READ) 
+cmpl_ring: 0xffff (65535) 
+seq_id: 0x0002 (2) 
+target_id: 0xffff (65535) 
+resp_addr: 0x00000004 0x49bb3040
+data_addr: 0x00000004 0xad6a4040
+i2c_slave_addr: 0x00a0 (160) 
+data_len: 0x1000 (4096) 
+offset: 0x0000 (0) 
+unused[0..2]: 0x00 (0) 0x00 (0) 
+CPU chimp
+Structure hwrm_mfg_fru_eeprom_read_output (16-byte) :
+error_code: 0x0000 (SUCCESS) 
+req_type: 0x020b (MFG_FRU_EEPROM_READ) 
+seq_id: 0x0002 (2) 
+resp_len: 0x0010 (16) 
+total_data_len: 0x1000 (4096) 
+unused_0: 0x0000 (0) 
+unused_1[0..3]: 0x00 (0) 0x00 (0) 0x00 (0) 
+valid: 0x01 (1) 
+
+FRU validate Successful
+
+Total summary:
+Result = PASS
+SN = N1100FX1920A0032CQ
+VB = 
+
+Duration: 	0:00:04
+Log close time: Fri May 21 11:37:31 2021
+

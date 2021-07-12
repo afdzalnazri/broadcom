@@ -1,0 +1,1 @@
+DELETE FROM buildConfig where id = '10'DELETE FROM buildConfig where id = '1'DELETE FROM buildConfig where id = '5'DELETE FROM buildConfig where id = '6'DELETE FROM buildConfig where id = '7'DELETE FROM buildConfig where id = '8'

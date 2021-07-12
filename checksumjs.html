@@ -1,0 +1,51 @@
+
+							   <script type="text/javascript"> 
+							  
+							  
+							  function calc_cksum8(N) {
+
+ // convert input value to upper case
+  strN = new String(N);
+  strN = strN.toUpperCase();
+
+  strHex = new String("0123456789ABCDEF");
+  result = 0;
+  fctr = 16;
+
+  for (i=0; i<strN.length; i++) {
+    if (strN.charAt(i) == " ") continue;
+
+    v = strHex.indexOf(strN.charAt(i));
+    if (v < 0) {
+       result = -1;
+       break; 
+    } 
+    result += v * fctr;
+
+    if (fctr == 16) fctr = 1;
+    else            fctr = 16;
+  }
+
+  if (result < 0) {
+     strResult = new String("Non-hex character");
+  }
+  else if (fctr == 1) {
+     strResult = new String("Odd number of characters");
+  }
+  else {
+     // Calculate 2's complement
+     result = (~(result & 0xff) + 1) & 0xFF;
+     // Convert result to string
+     //strResult = new String(result.toString());
+     strResult = strHex.charAt(Math.floor(result/16)) + strHex.charAt(result%16);
+  }
+	return strResult;			
+} 
+hex="00";   
+hex="01 0C 19 D5 30 C7 C8 42 72 6F 61 64 63 6F 6D DB 42 52 43 4D 20 31 30 30 47 20 31 50 20 35 37 35 30 34 20 4F 43 50 20 4D 65 7A 7A D2 4E 31 31 30 30 46 5A 31 39 32 31 30 30 30 31 59 43 51 D1 42 43 4D 39 35 37 35 30 34 2D 4E 31 31 30 30 46 5A CA 31 30 2F 31 35 2F 32 30 31 39 C1 00 00 00";
+ var checksumFinalCal = calc_cksum8(hex); 
+ alert("BOARD CHECKSUM : "+checksumFinalCal);
+ 
+
+
+ </script> 

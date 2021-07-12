@@ -1,0 +1,30 @@
+
+# #########################################################################
+# ##### Profile for OCP 3.0 1 port/stride=2 /1-host/                #######
+# #########################################################################
+
+# This line is a comment. Make sure it starts with '#'.
+# This is a MAC assignment profile file. It defines how 
+
+# Must start with version. Only 1.0 is supported for now.
+ version = 1.0
+
+# Total number of entries below.
+ entries = 2
+
+# ordinal  : the ordinal value used in NVRAM.
+# mac_type : either "primary" or "BMC", more can be defined
+#            as needed later.
+# increment: MAC address value from the base one.
+
+ ordinal = 0
+ mac_type = primary
+ increment = 0
+
+ ordinal = 0
+ mac_type = BMC
+ increment = 1
+ 
+# MAC address value to be advanced for the next chip.
+ stride = 2 
+

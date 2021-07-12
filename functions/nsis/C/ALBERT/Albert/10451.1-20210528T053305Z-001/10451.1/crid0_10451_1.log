@@ -1,0 +1,837 @@
+2021-05-20 13:18:02,093 - bc_verify - DEBUG - Printing loaded config...
+2021-05-20 13:18:02,093 - bc_verify - DEBUG - bc_number = 10451.1
+2021-05-20 13:18:02,093 - bc_verify - DEBUG - bnxtmt_bnxt_en_bundle_path = ../source/BC.gz
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - board_type = N1100FX
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - check_cfg = None
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - check_log = None
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - chip_type = thor
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - full_nvm_image_path = ../source/BC.img
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - mac_address = 000af7314300
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - mac_profile_path = ../source/BC.mpf
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - mgmt_bnxtmt_folder_path = None
+2021-05-20 13:18:02,094 - bc_verify - DEBUG - mgmt_ip = 10.13.253.168
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - mgmt_mac_address = 00:1f:bc:11:fe:3a
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - mgmt_password = admin
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - mgmt_username = root
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - mgmt_working_directory = /home/alvin
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - overwrite_path = overwrite/
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - shortlog = False
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - sit_version = 219.0.39.0
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - test_type = crid0
+2021-05-20 13:18:02,095 - bc_verify - DEBUG - y = False
+2021-05-20 13:18:02,095 - bc_verify - INFO - Starting BC verification process...
+2021-05-20 13:18:02,096 - bc_verify - INFO - Executing SETUP_COMMANDS...
+2021-05-20 13:18:02,096 - bc_verify - INFO - Executing power_on_if_off()
+2021-05-20 13:18:02,096 - bc_verify - DEBUG - Checking if system up...
+2021-05-20 13:18:02,835 - bc_verify - DEBUG - System is up.
+2021-05-20 13:18:02,835 - bc_verify - INFO - Executing setup_mgmt_working_directory()
+2021-05-20 13:18:02,836 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (mkdir -p /home/alvin/10451.1/2021_05_20_13_18_02-835968) 2>&1
+2021-05-20 13:18:03,510 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:03,510 - bc_verify - INFO - Executing setup_bnxtmt_bnxt_en()
+2021-05-20 13:18:03,511 - bc_verify - INFO - Attempting to copy ../source/BC.gz to /home/alvin/10451.1/2021_05_20_13_18_02-835968/BC.gz on mgmt through SFTP
+2021-05-20 13:18:04,589 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968 && tar -xf BC.gz) 2>&1
+2021-05-20 13:18:05,481 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:05,481 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (sed -i 's///' /home/alvin/10451.1/2021_05_20_13_18_02-835968/install.sh) 2>&1
+2021-05-20 13:18:06,150 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:06,151 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968 && ./install.sh) 2>&1
+2021-05-20 13:18:26,041 - bc_verify - SSH_OUTPUT - output:
+
+*************** Untarring the bnxtmt pkg: bnxtmt-216.2.97.0-x86_64.tar.gz
+
+bnxtmt-216.2.97.0-x86_64/
+bnxtmt-216.2.97.0-x86_64/304_p45b.rdf
+bnxtmt-216.2.97.0-x86_64/304_3p5e.rdf
+bnxtmt-216.2.97.0-x86_64/README
+bnxtmt-216.2.97.0-x86_64/ediag_drv.c
+bnxtmt-216.2.97.0-x86_64/debug.h
+bnxtmt-216.2.97.0-x86_64/Makefile.app
+bnxtmt-216.2.97.0-x86_64/ediag_drv.h
+bnxtmt-216.2.97.0-x86_64/304_p40a.rdf
+bnxtmt-216.2.97.0-x86_64/fpga304.rdf
+bnxtmt-216.2.97.0-x86_64/release.txt
+bnxtmt-216.2.97.0-x86_64/ediag_compat.h
+bnxtmt-216.2.97.0-x86_64/doc/
+bnxtmt-216.2.97.0-x86_64/doc/BnxtmtEngrManual.pdf
+bnxtmt-216.2.97.0-x86_64/bnxtmt_core.o
+bnxtmt-216.2.97.0-x86_64/304_p40e.rdf
+bnxtmt-216.2.97.0-x86_64/304_p45e.rdf
+bnxtmt-216.2.97.0-x86_64/304_p50a.rdf
+bnxtmt-216.2.97.0-x86_64/samples_input/
+bnxtmt-216.2.97.0-x86_64/samples_input/sample.devnrev
+bnxtmt-216.2.97.0-x86_64/samples_input/sample.mac
+bnxtmt-216.2.97.0-x86_64/samples_input/sample.sn4
+bnxtmt-216.2.97.0-x86_64/samples_input/sample.mpf
+bnxtmt-216.2.97.0-x86_64/obj/
+bnxtmt-216.2.97.0-x86_64/obj/hmacsha1.o
+bnxtmt-216.2.97.0-x86_64/obj/tclLink.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_shmem.o
+bnxtmt-216.2.97.0-x86_64/obj/tclPreserve.o
+bnxtmt-216.2.97.0-x86_64/obj/os_util_ioctl.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_receive.o
+bnxtmt-216.2.97.0-x86_64/obj/common_nvm_manager.o
+bnxtmt-216.2.97.0-x86_64/obj/tclAlloc.o
+bnxtmt-216.2.97.0-x86_64/obj/tclParse.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixTest.o
+bnxtmt-216.2.97.0-x86_64/obj/regexec.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixEvent.o
+bnxtmt-216.2.97.0-x86_64/obj/tclListObj.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_yield.o
+bnxtmt-216.2.97.0-x86_64/obj/vpd_verify.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_dbgcmd_shmem.o
+bnxtmt-216.2.97.0-x86_64/obj/tclLiteral.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_lmdev.o
+bnxtmt-216.2.97.0-x86_64/obj/tclVar.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_cpu_shmem.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIOUtil.o
+bnxtmt-216.2.97.0-x86_64/obj/tclDate.o
+bnxtmt-216.2.97.0-x86_64/obj/tclFCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_vpd.o
+bnxtmt-216.2.97.0-x86_64/obj/cdiag_drv_ioctl.o
+bnxtmt-216.2.97.0-x86_64/obj/l2tcp.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_verify.o
+bnxtmt-216.2.97.0-x86_64/obj/crc32_table.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_str.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIO.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_primate.o
+bnxtmt-216.2.97.0-x86_64/obj/tclTimer.o
+bnxtmt-216.2.97.0-x86_64/obj/tclInterp.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_yield.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsI.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_grc.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_bar.o
+bnxtmt-216.2.97.0-x86_64/obj/tclHistory.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_debug.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_fw_mem.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_fru_access.o
+bnxtmt-216.2.97.0-x86_64/obj/parser.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCompile.o
+bnxtmt-216.2.97.0-x86_64/obj/hwrm_cmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclbrcm_parse_params.o
+bnxtmt-216.2.97.0-x86_64/obj/crc32_file.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_nictest.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_bar.o
+bnxtmt-216.2.97.0-x86_64/obj/tclTestProcBodyObj.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsE.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_device.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixPipe.o
+bnxtmt-216.2.97.0-x86_64/obj/tclBinary.o
+bnxtmt-216.2.97.0-x86_64/obj/l2main.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsJ.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_mfg.o
+bnxtmt-216.2.97.0-x86_64/obj/duart_nvram.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUtil.o
+bnxtmt-216.2.97.0-x86_64/obj/l2udp.o
+bnxtmt-216.2.97.0-x86_64/obj/tclTestObj.o
+bnxtmt-216.2.97.0-x86_64/obj/common_nvm_tcl.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_cpudbg.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_stubs.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCompCmds.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixFCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_hex.o
+bnxtmt-216.2.97.0-x86_64/obj/tclResult.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCkalloc.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCmdIL.o
+bnxtmt-216.2.97.0-x86_64/obj/threadSvCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixSock.o
+bnxtmt-216.2.97.0-x86_64/obj/threadCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIOCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/regcomp.o
+bnxtmt-216.2.97.0-x86_64/obj/tclThreadTest.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_cos_data.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_hsi.o
+bnxtmt-216.2.97.0-x86_64/obj/l2ipv6.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_pci.o
+bnxtmt-216.2.97.0-x86_64/obj/tclStubInit.o
+bnxtmt-216.2.97.0-x86_64/obj/uart.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_os_pci.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsG.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_bits.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_xlmac_reg.o
+bnxtmt-216.2.97.0-x86_64/obj/tclTest.o
+bnxtmt-216.2.97.0-x86_64/obj/tclHash.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixNotfy.o
+bnxtmt-216.2.97.0-x86_64/obj/tclPanic.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_hw_set.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_reg.o
+bnxtmt-216.2.97.0-x86_64/obj/tclFileName.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_mhb_data.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_otp.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_version.o
+bnxtmt-216.2.97.0-x86_64/obj/host_mem.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIOGT.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_l2spc.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_pcicfg.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixInit.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_fmodules.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCompExpr.o
+bnxtmt-216.2.97.0-x86_64/obj/tclProc.o
+bnxtmt-216.2.97.0-x86_64/obj/regerror.o
+bnxtmt-216.2.97.0-x86_64/obj/async.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_io.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_dev.o
+bnxtmt-216.2.97.0-x86_64/obj/l2arp.o
+bnxtmt-216.2.97.0-x86_64/obj/retval_str.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsF.o
+bnxtmt-216.2.97.0-x86_64/obj/vpd_parse.o
+bnxtmt-216.2.97.0-x86_64/obj/sleep.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIndexObj.o
+bnxtmt-216.2.97.0-x86_64/obj/vpd_print.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_bits.o
+bnxtmt-216.2.97.0-x86_64/obj/libs.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_send.o
+bnxtmt-216.2.97.0-x86_64/obj/tclEvent.o
+bnxtmt-216.2.97.0-x86_64/obj/diag_stat.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_vpd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclClock.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_init.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_al.o
+bnxtmt-216.2.97.0-x86_64/obj/tclMain.o
+bnxtmt-216.2.97.0-x86_64/obj/tclPipe.o
+bnxtmt-216.2.97.0-x86_64/obj/tclNotify.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_license.o
+bnxtmt-216.2.97.0-x86_64/obj/umem.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_l2utl.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_ethtool.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_chimp.o
+bnxtmt-216.2.97.0-x86_64/obj/threadSpCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclStubLib.o
+bnxtmt-216.2.97.0-x86_64/obj/lm_chip.o
+bnxtmt-216.2.97.0-x86_64/obj/prints.o
+bnxtmt-216.2.97.0-x86_64/obj/l2tunnel.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_os_duart.o
+bnxtmt-216.2.97.0-x86_64/obj/tclIOSock.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_debug.o
+bnxtmt-216.2.97.0-x86_64/obj/tclStringObj.o
+bnxtmt-216.2.97.0-x86_64/obj/tclMtherr.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_extlb.o
+bnxtmt-216.2.97.0-x86_64/obj/tclPkg.o
+bnxtmt-216.2.97.0-x86_64/obj/tclParseExpr.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_firmware.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_output.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_cwdg.o
+bnxtmt-216.2.97.0-x86_64/obj/tclNamesp.o
+bnxtmt-216.2.97.0-x86_64/obj/regfree.o
+bnxtmt-216.2.97.0-x86_64/obj/Dbg_cmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCmdMZ.o
+bnxtmt-216.2.97.0-x86_64/obj/tclAppInit.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxpkg_lib.o
+bnxtmt-216.2.97.0-x86_64/obj/tclLoad.o
+bnxtmt-216.2.97.0-x86_64/obj/tclLoadDl.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_log.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsD.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_os_uart.o
+bnxtmt-216.2.97.0-x86_64/obj/uart_nvram.o
+bnxtmt-216.2.97.0-x86_64/obj/tclBasic.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_serport.o
+bnxtmt-216.2.97.0-x86_64/obj/l2ip.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_l2pkt.o
+bnxtmt-216.2.97.0-x86_64/obj/os_disp_utils.o
+bnxtmt-216.2.97.0-x86_64/obj/tclCmdAH.o
+bnxtmt-216.2.97.0-x86_64/obj/crc32.o
+bnxtmt-216.2.97.0-x86_64/obj/l2mac.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsC.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsA.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_fw_dbgcmd_shmem.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_stats.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_sr_reg.o
+bnxtmt-216.2.97.0-x86_64/obj/l2check.o
+bnxtmt-216.2.97.0-x86_64/obj/tclAsync.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_fmac.o
+bnxtmt-216.2.97.0-x86_64/obj/debug.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsB.o
+bnxtmt-216.2.97.0-x86_64/obj/l2bmgmt.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixThrd.o
+bnxtmt-216.2.97.0-x86_64/obj/Dbg.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_core_data.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_os_sleep.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_hdma.o
+bnxtmt-216.2.97.0-x86_64/obj/tclExecute.o
+bnxtmt-216.2.97.0-x86_64/obj/disputil.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_pcicfg.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_delay.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_pci.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_coredump.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_view.o
+bnxtmt-216.2.97.0-x86_64/obj/tclObj.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixFile.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_device.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_linux.o
+bnxtmt-216.2.97.0-x86_64/obj/threadPoolCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_common.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_help.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_os_mem.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_hostmem.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_pkg.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_reg.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_driver.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxpkg_file.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_host_shmem.o
+bnxtmt-216.2.97.0-x86_64/obj/crctab.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUtf.o
+bnxtmt-216.2.97.0-x86_64/obj/tclScan.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_stats.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_disp64.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_lmdev.o
+bnxtmt-216.2.97.0-x86_64/obj/tcl_util.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_hmem.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_delay.o
+bnxtmt-216.2.97.0-x86_64/obj/tclThread.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixTime.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_version.o
+bnxtmt-216.2.97.0-x86_64/obj/bnxt_nvm_trailer.o
+bnxtmt-216.2.97.0-x86_64/obj/decode_pm_cfg_data.o
+bnxtmt-216.2.97.0-x86_64/obj/tclResolve.o
+bnxtmt-216.2.97.0-x86_64/obj/tclGet.o
+bnxtmt-216.2.97.0-x86_64/obj/tclPosixStr.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_driver.o
+bnxtmt-216.2.97.0-x86_64/obj/scriptsH.o
+bnxtmt-216.2.97.0-x86_64/obj/dg_nvm.o
+bnxtmt-216.2.97.0-x86_64/obj/tclEncoding.o
+bnxtmt-216.2.97.0-x86_64/obj/tclUnixChan.o
+bnxtmt-216.2.97.0-x86_64/obj/threadSvListCmd.o
+bnxtmt-216.2.97.0-x86_64/obj/tclEnv.o
+bnxtmt-216.2.97.0-x86_64/obj/tclRegexp.o
+bnxtmt-216.2.97.0-x86_64/57340.rdf
+bnxtmt-216.2.97.0-x86_64/ediag_proxy.h
+bnxtmt-216.2.97.0-x86_64/cumulus_pci.h
+bnxtmt-216.2.97.0-x86_64/load.sh
+bnxtmt-216.2.97.0-x86_64/bcmtype.h
+bnxtmt-216.2.97.0-x86_64/Makefile
+bnxtmt-216.2.97.0-x86_64/304_3p5a.rdf
+bnxtmt-216.2.97.0-x86_64/debug.c
+bnxtmt-216.2.97.0-x86_64/diagfw/
+bnxtmt-216.2.97.0-x86_64/diagfw/adbono.cmb_a.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_si.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/adape.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0000.promoter.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/debug.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/sr_a.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/adtang.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cr_e_0x20000040_sbl.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c3.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000040_sbl.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_primate.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/adkong.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cr_a_0x20000040_sbl.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid8001.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c2_sbi.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0000.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c3_sbi.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_si_sbi.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0001.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/smart_nic.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/th_e_0x20000040_sbl.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c1.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c2.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cm_a.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cr_e.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_primate_sbi.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/adbono.sr_a.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cmb_a.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/ad_c1_sbi.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/cr_a_0x20000360_sbl.signed.crid0000.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/adbono.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/fwutil.bin
+bnxtmt-216.2.97.0-x86_64/diagfw/sr2_e_0x20000040_sbl.bin.fastboot
+bnxtmt-216.2.97.0-x86_64/diagfw/adchimp.bin
+bnxtmt-216.2.97.0-x86_64/304_p32a.rdf
+bnxtmt-216.2.97.0-x86_64/57304.rdf
+bnxtmt-216.2.97.0-x86_64/start.tcl
+bnxtmt-216.2.97.0-x86_64/304_p44a.rdf
+bnxtmt-216.2.97.0-x86_64/304_p45a.rdf
+bnxtmt-216.2.97.0-x86_64/ediag_compat.c
+bnxtmt-216.2.97.0-x86_64/DBG/
+Changing directory to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64
+
+*************** Building bnxtmt ***************
+
+rm -f  bnxtmtdrv.ko
+make -C /lib/modules/3.10.0-862.3.2.el7.x86_64/build M=`pwd` modules CROSS_COMPILE= ARCH=x86_64
+make[1]: Entering directory `/usr/src/kernels/3.10.0-862.3.2.el7.x86_64'
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/ediag_drv.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/ediag_compat.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/debug.o
+  LD [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/bnxtmtdrv.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/bnxtmtdrv.mod.o
+  LD [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/bnxtmtdrv.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-862.3.2.el7.x86_64'
+make[1]: Entering directory `/home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64'
+gcc -o bnxtmt obj/tclUnixSock.o obj/tcl_vpd.o obj/tclRegexp.o obj/tclHistory.o obj/l2tcp.o obj/l2bmgmt.o obj/decode_host_shmem.o obj/tclCmdIL.o obj/tclDate.o obj/tclLoadDl.o obj/tcl_version.o obj/tclIOUtil.o obj/dg_device.o obj/vpd_verify.o obj/bnxt_nvm_view.o obj/regexec.o obj/l2check.o obj/scriptsB.o obj/tclUnixFCmd.o obj/dg_debug.o obj/tclStringObj.o obj/tcl_delay.o obj/tcl_dbgcmd_shmem.o obj/tclVar.o obj/tcl_xlmac_reg.o obj/tcl_hostmem.o obj/decode_core_data.o obj/l2main.o obj/tcl_firmware.o obj/tclAppInit.o obj/regerror.o obj/decode_grc.o obj/libs.o obj/os_disp_utils.o obj/tclExecute.o obj/tclUnixInit.o obj/tclPreserve.o obj/tcl_lmdev.o obj/scriptsG.o obj/dg_bits.o obj/tclMtherr.o obj/threadCmd.o obj/tclUnixFile.o obj/dg_os_mem.o obj/tclIO.o obj/hwrm_cmd.o obj/tcl_hex.o obj/bnxt_nvm_ethtool.o obj/tclLink.o obj/l2tunnel.o obj/scriptsC.o obj/tclIndexObj.o obj/bnxpkg_lib.o obj/Dbg_cmd.o obj/dg_nvm.o obj/l2ipv6.o obj/dg_shmem.o obj/tclClock.o obj/tclNotify.o obj/tcl_stats.o obj/tclTimer.o obj/decode_fw_dbgcmd_shmem.o obj/l2mac.o obj/bnxt_nvm_linux.o obj/regcomp.o obj/tcl_bar.o obj/dg_serport.o obj/tclPkg.o obj/lm_chip.o obj/tclUnixThrd.o obj/decode_sr_reg.o obj/tcl_al.o obj/scriptsD.o obj/tclFileName.o obj/dg_vpd.o obj/dg_delay.o obj/decode_hsi.o obj/dg_os_pci.o obj/bnxt_nvm_pkg.o obj/tclParseExpr.o obj/tclListObj.o obj/tcl_util.o obj/threadPoolCmd.o obj/tclUnixNotfy.o obj/os_util_ioctl.o obj/tclAsync.o obj/tclCkalloc.o obj/umem.o obj/tcl_bits.o obj/bnxt_nvm_coredump.o obj/duart_nvram.o obj/dg_driver.o obj/host_mem.o obj/tcl_output.o obj/regfree.o obj/async.o obj/dg_receive.o obj/tcl_fmac.o obj/tclThread.o obj/crc32_file.o obj/tclFCmd.o obj/tcl_l2utl.o obj/dg_reg.o obj/hmacsha1.o obj/tclMain.o obj/dg_send.o obj/tcl_fru_access.o obj/bnxt_nvm_version.o obj/dg_os_sleep.o obj/tclbrcm_parse_params.o obj/tclThreadTest.o obj/dg_pci.o obj/tcl_disp64.o obj/tclUnixEvent.o obj/tclAlloc.o obj/scriptsI.o obj/dg_pcicfg.o obj/common_nvm_manager.o obj/tcl_primate.o obj/tclLiteral.o obj/tclIOCmd.o obj/tclStubLib.o obj/tcl_extlb.o obj/tclBasic.o obj/uart_nvram.o obj/bnxt_nvm_common.o obj/tclResolve.o obj/tclParse.o obj/decode_cos_data.o obj/tclUtf.o obj/tclTestProcBodyObj.o obj/tclScan.o obj/threadSvCmd.o obj/l2ip.o obj/tcl_license.o obj/tcl_reg.o obj/tclUnixChan.o obj/tclUnixTest.o obj/tclStubInit.o obj/scriptsA.o obj/tclEncoding.o obj/common_nvm_tcl.o obj/tcl_hw_set.o obj/tclCompExpr.o obj/dg_dev.o obj/Dbg.o obj/decode_cpu_shmem.o obj/l2arp.o obj/dg_lmdev.o obj/tclInterp.o obj/tcl_chimp.o obj/tclGet.o obj/l2udp.o obj/vpd_parse.o obj/tclUnixPipe.o obj/tcl_fw_mem.o obj/tcl_mfg.o obj/tcl_log.o obj/decode_pm_cfg_data.o obj/threadSvListCmd.o obj/crctab.o obj/scriptsJ.o obj/tcl_l2pkt.o obj/bnxt_nvm_str.o obj/dg_bar.o obj/tcl_l2spc.o obj/bnxt_nvm_verify.o obj/tclPanic.o obj/tclPosixStr.o obj/bnxt_nvm_cwdg.o obj/tcl_nictest.o obj/tclHash.o obj/scriptsF.o obj/scriptsH.o obj/dg_stats.o obj/tcl_debug.o obj/dg_init.o obj/parser.o obj/tclBinary.o obj/tclTest.o obj/dg_os_uart.o obj/debug.o obj/tclObj.o obj/dg_yield.o obj/tclEvent.o obj/crc32.o obj/tcl_io.o obj/crc32_table.o obj/tcl_cpudbg.o obj/tclCompCmds.o obj/tclCmdMZ.o obj/tclResult.o obj/tclIOGT.o obj/tclTestObj.o obj/uart.o obj/scriptsE.o obj/bnxt_nvm_stubs.o obj/tclEnv.o obj/tclCompile.o obj/cdiag_drv_ioctl.o obj/tcl_pcicfg.o obj/bnxt_nvm_trailer.o obj/sleep.o obj/tclUnixTime.o obj/disputil.o obj/tcl_yield.o obj/tcl_pci.o obj/tcl_device.o obj/threadSpCmd.o obj/decode_otp.o obj/tclLoad.o obj/dg_hmem.o obj/tcl_fmodules.o obj/tclNamesp.o obj/dg_os_duart.o obj/vpd_print.o obj/retval_str.o obj/tclProc.o obj/diag_stat.o obj/tclCmdAH.o obj/tclUtil.o obj/tclIOSock.o obj/tcl_hdma.o obj/tcl_driver.o obj/tclPipe.o obj/bnxpkg_file.o obj/decode_mhb_data.o obj/tcl_help.o obj/prints.o  -lm -lc -ldl -lpthread -lrt 
+make[1]: Leaving directory `/home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64'
+
+*************** Untarring the bnxt_en pkg: bnxt_en-1.10.2-216.2.152.0.tar.gz
+
+bnxt_en-1.10.2-216.2.152.0/COPYING
+bnxt_en-1.10.2-216.2.152.0/bnxt_ethtool.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_tc_compat.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_coredump.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_devlink.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_xdp.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_nvm_defs.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_tc.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_hwrm.c
+bnxt_en-1.10.2-216.2.152.0/bnxt.h
+bnxt_en-1.10.2-216.2.152.0/bnxt.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_dcb.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_extra_ver.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_debugfs.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_compat.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_ptp.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_sriov.c
+bnxt_en-1.10.2-216.2.152.0/ChangeLog
+bnxt_en-1.10.2-216.2.152.0/bnxt_debugfs.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_dim.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_dcb.h
+bnxt_en-1.10.2-216.2.152.0/README.TXT
+bnxt_en-1.10.2-216.2.152.0/bnxt_ulp.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_xdp.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_ethtool.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_netlink.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_debugfs_cpt.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_lfc.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_eem.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_ptp.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_ulp.c
+bnxt_en-1.10.2-216.2.152.0/Makefile
+bnxt_en-1.10.2-216.2.152.0/bnxt_netlink.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_sriov.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_lfc.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_vfr.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_vfr.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_hwrm.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_tc.c
+bnxt_en-1.10.2-216.2.152.0/bnxt_eem.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_fw_hdr.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_dim.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_hsi.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_lfc_ioctl.h
+bnxt_en-1.10.2-216.2.152.0/bnxt_devlink.c
+Changing directory to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0
+
+*************** Building bnxt_en ***************
+
+make -C /lib/modules/3.10.0-862.3.2.el7.x86_64/build M=/home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-862.3.2.el7.x86_64'
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_hwrm.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_ethtool.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_sriov.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_dcb.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_ulp.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_xdp.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_ptp.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_vfr.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_tc.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_devlink.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_lfc.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_netlink.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_dim.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_eem.o
+  CC [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_debugfs_cpt.o
+  LD [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_en.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_en.mod.o
+  LD [M]  /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxt_en-1.10.2-216.2.152.0/bnxt_en.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-862.3.2.el7.x86_64'
+Renaming bnxt_en-1.10.2-216.2.152.0 to bnxt_en
+
+2021-05-20 13:18:26,041 - bc_verify - INFO - Executing find_and_set_bnxtmt_folder_path()
+2021-05-20 13:18:26,042 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968 && find . -type d -name 'bnxtmt*') 2>&1
+2021-05-20 13:18:26,709 - bc_verify - SSH_OUTPUT - output:
+./bnxtmt-216.2.97.0-x86_64
+
+2021-05-20 13:18:26,710 - bc_verify - INFO - Executing create_mac_id()
+2021-05-20 13:18:26,710 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && echo 'mac_addr_pref  =  000AF7
+mac_addr_start =  314300
+mac_addr_end   =  FFFFFF
+' > 10451_1.mac) 2>&1
+2021-05-20 13:18:27,366 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:27,366 - bc_verify - INFO - Executing copy_bc_stuff_to_bnxtmt_folder()
+2021-05-20 13:18:27,367 - bc_verify - INFO - Attempting to copy ../source/BC.mpf to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/10451_1.mpf on mgmt through SFTP
+2021-05-20 13:18:28,048 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (sed -i 's///' /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/10451_1.mpf) 2>&1
+2021-05-20 13:18:28,725 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:28,725 - bc_verify - INFO - Attempting to copy ../source/BC.img to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/10451_1.img on mgmt through SFTP
+2021-05-20 13:18:30,801 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cp /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/TH_A/mfgload2.sh /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/mfgload2.sh) 2>&1
+2021-05-20 13:18:31,463 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:31,464 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (sed -i 's///' /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/mfgload2.sh) 2>&1
+2021-05-20 13:18:32,141 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:32,141 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && sed -i '1i fwutil' NVMFILL.TCL) 2>&1
+2021-05-20 13:18:32,819 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:32,820 - bc_verify - INFO - Copying files from overwrite folder...
+2021-05-20 13:18:32,820 - bc_verify - INFO - Attempting to copy overwrite/GET_CRID.TCL to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/GET_CRID.TCL on mgmt through SFTP
+2021-05-20 13:18:33,479 - bc_verify - INFO - Attempting to copy overwrite/sample.devnrev to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/sample.devnrev on mgmt through SFTP
+2021-05-20 13:18:34,155 - bc_verify - INFO - Attempting to copy overwrite/FRU_BC10451_1_0_05192021161017.zip to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/FRU_BC10451_1_0_05192021161017.zip on mgmt through SFTP
+2021-05-20 13:18:34,817 - bc_verify - INFO - Attempting to copy overwrite/fru.bin to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/fru.bin on mgmt through SFTP
+2021-05-20 13:18:35,481 - bc_verify - INFO - Attempting to copy overwrite/fru.spec to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/fru.spec on mgmt through SFTP
+2021-05-20 13:18:36,132 - bc_verify - INFO - Attempting to copy overwrite/sn4.txt to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/sn4.txt on mgmt through SFTP
+2021-05-20 13:18:36,781 - bc_verify - INFO - Attempting to copy overwrite/bc.sh to /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/bc.sh on mgmt through SFTP
+2021-05-20 13:18:37,463 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && chmod 755 *.sh) 2>&1
+2021-05-20 13:18:38,120 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:38,120 - bc_verify - INFO - Executing nvmfill_and_detect_chip_type()
+2021-05-20 13:18:38,121 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX nvmfill 10451_1) 2>&1
+2021-05-20 13:18:58,324 - bc_verify - SSH_OUTPUT - output:
+
+(cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX nvmfill 10451_1) 2>&1
+exit
+Last login: Thu May 20 11:21:48 2021 from 10.230.28.75
+[root@ldst-021 ~]# 
+[root@ldst-021 ~]# (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216 .2.97.0-x86_64 && ./bc.sh N1100FX nvmfill 10451_1) 2>&1
+=================================================
+Board: N1100FX
+Operation: nvmfill (eval NVMFILL.TCL)
+=================================================
+Nvmfill cmd: ./mfgload2.sh -sysop -none -no_swap -blank
+Running in MFG mode...
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+Command argument:
+./bnxtmt -sysop -none -no_swap -blank -log 10451_1.log 
+
+TrLv<1>, hwrm_cmd.c (1029): (nil) fw_get_hwrm_version: HWRM timeout (200/200)
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0x01F2 26  001018000000 0.0.0    auto
+                                      0x03E0
+2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0x01F4 61  001018000001 0.0.0    auto
+                                      0x05C0
+3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0x01F6 26  001018000002 0.0.0    auto
+                                      0x05E0
+4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0x01FE 61  001018000003 0.0.0    auto
+                                      0x0600
+GRCP already unlocked
+AB_PROD device, CRID 0000
+Fast boot /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0000.bin.fastboot succeeded!!
+[37m
+Test is running iteration 1 on device 1
+[0mNictest completed with 0 failures, 0 successes, 0 skips, out of 0 tests.
+[37m
+Test is running iteration 1 on device 2
+[0mNictest completed with 0 failures, 0 successes, 0 skips, out of 0 tests.
+[37mSkip device 3 as it's an NPAR function.[0m[37mSkip device 4 as it's an NPAR function.[0m[37mNictest summary:
+[0m[37mNictest on device 1 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 2 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 3 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 4 completed (with 0 failures out of 0 tests)
+[0mC :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+[32m[0m1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0x01F2 26  001018000000 0.0.0    auto
+                                      0x03E0
+[32m[0m2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0x01F4 61  001018000001 0.0.0    auto
+                                      0x05C0
+[32m[0m3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0x01F6 26  001018000002 0.0.0    auto
+                                      0x05E0
+[32m[0m4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0x01FE 61  001018000003 0.0.0    auto
+                                      0x0600
+[37mTotal summary:
+[0m[32mResult = PASS
+[0mSN = 
+VB = 
+MAC0 = 001018000000
+MAC1 = 001018000001
+MAC2 = 001018000002
+MAC3 = 001018000003
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+Clearing Fastboot Registers
+[root@ldst-021 ~]# exit
+logout
+
+2021-05-20 13:18:58,324 - bc_verify - INFO - Detected CRID: 0000
+2021-05-20 13:18:58,325 - bc_verify - INFO - CRID matches test_type: crid0
+2021-05-20 13:18:58,325 - bc_verify - INFO - Executing reboot()
+2021-05-20 13:18:58,325 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (shutdown now) 2>&1
+2021-05-20 13:18:59,045 - bc_verify - SSH_OUTPUT - output:
+
+2021-05-20 13:18:59,045 - bc_verify - DEBUG - Waiting for system to go down...
+2021-05-20 13:19:19,089 - bc_verify - DEBUG - System is down.
+2021-05-20 13:20:19,150 - bc_verify - DEBUG - Checking if system up...
+2021-05-20 13:20:22,159 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:20:22,160 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:20:35,177 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:20:35,177 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:20:48,195 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:20:48,195 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:21:01,211 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:21:01,211 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:21:14,227 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:21:14,227 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:21:27,243 - bc_verify - DEBUG - System still not up...
+2021-05-20 13:21:27,243 - bc_verify - DEBUG - Sending magic packet to 00:1f:bc:11:fe:3a
+2021-05-20 13:21:37,980 - bc_verify - DEBUG - System is up.
+2021-05-20 13:21:37,981 - bc_verify - INFO - Executing CRID0_COMMANDS
+2021-05-20 13:21:37,981 - bc_verify - INFO - Executing bcsh('program', ['PASS', 'PASS'], attempts=2)
+2021-05-20 13:21:37,982 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+2021-05-20 13:22:06,207 - bc_verify - SSH_OUTPUT - output:
+
+(cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+exit
+Last login: Thu May 20 13:19:09 2021 from h021.swdvt.lab.broadcom.net
+ABRT has detected 1 problem(s). For more info run: abrt-cli list --since 1621541949
+[root@ldst-021 ~]# 
+[root@ldst-021 ~]# (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216 .2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+=================================================
+Board: N1100FX
+Operation: program (pre-test and program)
+=================================================
+Check CRID value for Thor cmd: ./mfgload2.sh -sysop -none -no_swap -rc GET_CRID.TCL -log 10451_1.log
+Running in MFG mode...
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+AB_PROD device, CRID 0000
+Fast boot /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0000.bin.fastboot succeeded!!
+Command argument:
+./bnxtmt -sysop -none -no_swap -rc GET_CRID.TCL -log 10451_1.log 
+
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 216.4.22.9 auto
+                                      0xC3C0
+2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 216.4.22.9 auto
+                                      0xC3E0
+3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 216.4.22.9 auto
+                                      0xC5C0
+4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 216.4.22.9 auto
+                                      0xC5E0
+[37m
+Test is running iteration 1 on device 1
+[0mNictest completed with 0 failures, 0 successes, 0 skips, out of 0 tests.
+[37mSkip device 2 as it's an NPAR function.[0m[37mSkip device 3 as it's an NPAR function.[0m[37mSkip device 4 as it's an NPAR function.[0m[37mNictest summary:
+[0m[37mNictest on device 1 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 2 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 3 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 4 completed (with 0 failures out of 0 tests)
+[0mC :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+[32m[0m1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 216.4.22.9 auto
+                                      0xC3C0
+[32m[0m2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 216.4.22.9 auto
+                                      0xC3E0
+[32m[0m3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 216.4.22.9 auto
+                                      0xC5C0
+[32m[0m4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 216.4.22.9 auto
+                                      0xC5E0
+[37mTotal summary:
+[0m[32mResult = PASS
+[0mSN = 
+VB = 
+MAC0 = 001018000000
+MAC1 = 001018000001
+MAC2 = 001018000002
+MAC3 = 001018000003
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+Clearing Fastboot Registers
+Pre-test cmd: ./mfgload2.sh -sysop -no_swap -t ACDE1 -T A3A4 -log 10451_1.log
+Running in MFG mode...
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+Command argument:
+./bnxtmt -sysop -no_swap -t ACDE1 -T A3A4 -log 10451_1.log 
+
+TrLv<1>, hwrm_cmd.c (1029): (nil) fw_get_hwrm_version: HWRM timeout (200/200)
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 0.0.0    auto
+                                      0xC3C0
+2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 0.0.0    auto
+                                      0xC3E0
+3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 0.0.0    auto
+                                      0xC5C0
+4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 0.0.0    auto
+                                      0xC5E0
+GRCP already unlocked
+GRCP already unlocked
+[37m
+Test is running iteration 1 on device 1
+[0mGRCP already unlocked
+Group A. Basic Tests (PCI/Register etc.) on device 1
+   A03. Block BMTBM Register Test.................: [32mpassed   (416ms)
+[0m   A04. Clock Crystal Test........................: [sRunning..[u[31mfailed   (1526ms)
+[0mNictest completed with 1 failures, 1 successes, 0 skips, out of 2 tests.
+[37mTotal summary:
+[0m[31mResult = FAIL
+[0m[31mErrorcode = 446
+[0m[31mErrorDescription = Clock crystal test fails failed
+[0mSN = 
+VB = 
+MAC0 = 001018000000
+MAC1 = 001018000001
+MAC2 = 001018000002
+MAC3 = 001018000003
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+Clearing Fastboot Registers
+[root@ldst-021 ~]# exit
+logout
+
+2021-05-20 13:22:06,208 - bc_verify - ERROR - bnxtmt command failed with unexpected results! Expected: ['PASS', 'PASS'] Results: ['PASS', 'FAIL']
+2021-05-20 13:22:06,208 - bc_verify - WARNING - bnxtmt test failed on attempt: 1
+2021-05-20 13:22:06,208 - bc_verify - INFO - trying again...
+2021-05-20 13:22:06,208 - bc_verify - INFO - Attempting to execute cmd on mgmt through SSH: (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+2021-05-20 13:23:09,936 - bc_verify - SSH_OUTPUT - output:
+
+(cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+exit
+Last login: Thu May 20 13:22:09 2021 from h021.swdvt.lab.broadcom.net
+[root@ldst-021 ~]# 
+[root@ldst-021 ~]# (cd /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216 .2.97.0-x86_64 && ./bc.sh N1100FX program 10451_1) 2>&1
+=================================================
+Board: N1100FX
+Operation: program (pre-test and program)
+=================================================
+Check CRID value for Thor cmd: ./mfgload2.sh -sysop -none -no_swap -rc GET_CRID.TCL -log 10451_1.log
+Running in MFG mode...
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+AB_PROD device, CRID 0000
+Fast boot /home/alvin/10451.1/2021_05_20_13_18_02-835968/bnxtmt-216.2.97.0-x86_64/diagfw/th_a_0x20000360_sbl.signed.crid0000.bin.fastboot succeeded!!
+Command argument:
+./bnxtmt -sysop -none -no_swap -rc GET_CRID.TCL -log 10451_1.log 
+
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 216.4.22.9 auto
+                                      0xC3C0
+2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 216.4.22.9 auto
+                                      0xC3E0
+3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 216.4.22.9 auto
+                                      0xC5C0
+4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 216.4.22.9 auto
+                                      0xC5E0
+[37m
+Test is running iteration 1 on device 1
+[0mNictest completed with 0 failures, 0 successes, 0 skips, out of 0 tests.
+[37mSkip device 2 as it's an NPAR function.[0m[37mSkip device 3 as it's an NPAR function.[0m[37mSkip device 4 as it's an NPAR function.[0m[37mNictest summary:
+[0m[37mNictest on device 1 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 2 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 3 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 4 completed (with 0 failures out of 0 tests)
+[0mC :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+[32m[0m1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 216.4.22.9 auto
+                                      0xC3C0
+[32m[0m2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 216.4.22.9 auto
+                                      0xC3E0
+[32m[0m3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 216.4.22.9 auto
+                                      0xC5C0
+[32m[0m4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 216.4.22.9 auto
+                                      0xC5E0
+[37mTotal summary:
+[0m[32mResult = PASS
+[0mSN = 
+VB = 
+MAC0 = 001018000000
+MAC1 = 001018000001
+MAC2 = 001018000002
+MAC3 = 001018000003
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+GRCP already unlocked
+Clearing Fastboot Registers
+Pre-test cmd: ./mfgload2.sh -sysop -no_swap -t ACDE1 -T A3A4 -log 10451_1.log
+Running in MFG mode...
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+Command argument:
+./bnxtmt -sysop -no_swap -t ACDE1 -T A3A4 -log 10451_1.log 
+
+TrLv<1>, hwrm_cmd.c (1029): (nil) fw_get_hwrm_version: HWRM timeout (200/200)
+bnxtmt -- Broadcom Manufacturing tool, version 216.2.97.0
+    Copyright (c) 2018 Broadcom Limited,      All rights reserved.
+
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 0.0.0    auto
+                                      0xC3C0
+2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 0.0.0    auto
+                                      0xC3E0
+3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 0.0.0    auto
+                                      0xC5C0
+4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 0.0.0    auto
+                                      0xC5E0
+GRCP already unlocked
+GRCP already unlocked
+[37m
+Test is running iteration 1 on device 1
+[0mGRCP already unlocked
+Group A. Basic Tests (PCI/Register etc.) on device 1
+   A03. Block BMTBM Register Test.................: [32mpassed   (405ms)
+[0m   A04. Clock Crystal Test........................: [sRunning..[u[32mpassed   (1526ms)
+[0mGroup E. Wrap Up Tests (on all devices) on device 1
+   E02. LED Blind Test............................: [s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[32mpassed   (12150ms)
+[0mNictest completed with 0 failures, 3 successes, 0 skips, out of 3 tests.
+GRCP already unlocked
+Clearing Fastboot Registers
+[37m
+Test is running iteration 1 on device 2
+[0mGRCP already unlocked
+Group A. Basic Tests (PCI/Register etc.) on device 2
+   A03. Block BMTBM Register Test.................: [32mpassed   (303ms)
+[0m   A04. Clock Crystal Test........................: [s         [u[32mpassed   (1523ms)
+[0mGroup E. Wrap Up Tests (on all devices) on device 2
+   E02. LED Blind Test............................: [sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[sRunning..[u[s         [u[32mpassed   (12150ms)
+[0mNictest completed with 0 failures, 3 successes, 0 skips, out of 3 tests.
+GRCP already unlocked
+Clearing Fastboot Registers
+[37mSkip device 3 as it's an NPAR function.[0m[37mSkip device 4 as it's an NPAR function.[0m[37mNictest summary:
+[0m[37mNictest on device 1 completed (with 0 failures out of 3 tests)
+[0m[37mNictest on device 2 completed (with 0 failures out of 3 tests)
+[0m[37mNictest on device 3 completed (with 0 failures out of 0 tests)
+[0m[37mNictest on device 4 completed (with 0 failures out of 0 tests)
+[0mGRCP already unlocked
+Clearing Fastboot Registers
+C :   Brd:Rv    Bus       PCI     Spd Base   IRQ      MAC     FmwVer   Config.
+[32m[0m1 : 57504:B1 00:01:00:00 PCIE-16  2.5 0xC1F2 26  001018000000 0.0.0    auto
+                                      0xC3C0
+[32m[0m2 : 57504:B1 00:01:00:01 PCIE-16  2.5 0xC1F4 61  001018000001 0.0.0    auto
+                                      0xC3E0
+[32m[0m3 : 57504:B1 00:01:00:02 PCIE-16  2.5 0xC1F6 26  001018000002 0.0.0    auto
+                                      0xC5C0
+[32m[0m4 : 57504:B1 00:01:00:03 PCIE-16  2.5 0xC212 61  001018000003 0.0.0    auto
+                                      0xC5E0
+[37mTotal summary:
+[0m[32mResult = PASS
+[0mSN = 
+VB = 
+MAC0 = 001018000000
+MAC1 = 001018000001
+MAC2 = 001018000002
+MAC3 = 001018000003
+[root@ldst-021 ~]# exit
+logout
+
+2021-05-20 13:23:09,936 - bc_verify - INFO - BC Verified!
